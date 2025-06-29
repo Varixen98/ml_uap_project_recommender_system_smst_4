@@ -1,0 +1,13 @@
+#Sensitive file
+.env
+
+#Large model file
+svd_modelv2.pkl
+
+#Versi file
+app2.py
+
+#Large dataset file
+tags.csv
+LAPORAN PROJECT MACHINE LEARNING.docx
+Demo_ml.mkv
