@@ -43,7 +43,7 @@ def load_movie_data():
 
 @st.cache_data
 def load_ratings_data():
-    df = pd.read_csv("./Datasets/ml-32m/ratings.csv")
+    df = pd.read_csv("./Datasets/ml-32m/resized_rating.csv")
     return df
 
 @st.cache_data
