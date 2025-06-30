@@ -427,24 +427,6 @@ elif page == 'Movie Recommendation System':
 elif page == 'EDA':
     st.title("🔍 Exploratory Data Analysis (EDA)")
 
-<<<<<<< HEAD
-    st.subheader("🎬 Movie Data Sample")
-    st.write(movie_data.head())
-
-    st.subheader("📊 Genre Distribution")
-    genre_counts = pd.Series([genre for sublist in movie_data['genres'] for genre in sublist]).value_counts()
-    st.bar_chart(genre_counts)
-
-    st.subheader("🕰️ Movie Release Year Distribution")
-    st.line_chart(movie_data['year'].value_counts().sort_index())
-
-    # st.subheader("⭐ Bayesian Average Distribution")
-    # st.histogram(movie_stats['bayesian_average'], bins=20)
-
-    # st.subheader("🎯 Correlation between Release Year and Bayesian Rating")
-    # merged = movie_data.merge(movie_stats, on='movieId')
-    # st.scatter_chart(merged[['year', 'bayesian_average']].dropna())
-=======
     st.markdown("This page provides an exploratory data analysis of the MovieLens dataset, similar to the analysis in the training notebook.")
     st.write("---")
 
@@ -531,8 +513,6 @@ elif page == 'EDA':
     ax.set_xlabel("Bayesian Average Rating")
     ax.set_ylabel("Number of Movies")
     st.pyplot(fig)
->>>>>>> a6317ac2f2f49b459b32a73ccbfc9c29854c77e8
-
 
 elif page == 'Evaluasi Model':
     st.title("🧪 Model Evaluation")
@@ -558,7 +538,3 @@ elif page == 'Evaluasi Model':
     similarity_df = pd.DataFrame(similarities, index=sample_titles, columns=sample_titles)
 
     st.dataframe(similarity_df)
-<<<<<<< HEAD
-=======
-
->>>>>>> a6317ac2f2f49b459b32a73ccbfc9c29854c77e8
