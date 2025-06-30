@@ -514,6 +514,7 @@ elif page == 'EDA':
     ax.set_ylabel("Number of Movies")
     st.pyplot(fig)
 
+
 elif page == 'Evaluasi Model':
     st.title("🧪 Model Evaluation")
 
